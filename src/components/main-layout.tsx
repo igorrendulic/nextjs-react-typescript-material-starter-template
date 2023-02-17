@@ -16,7 +16,14 @@ const MainLayoutRoot = styled("div")(({ theme }) => ({
 export const MainLayout: FC<MainLayoutProps> = ({ children }) => {
   return (
     <MainLayoutRoot>
-      <main>{children}</main>
+      {/* <MainNavbar onOpenSidebar={(): void => setIsSidebarOpen(true)} />
+      <MainSidebar
+        onClose={(): void => setIsSidebarOpen(false)}
+        open={isSidebarOpen}
+      /> */}
+
+      {children}
+      {/* <Footer /> */}
     </MainLayoutRoot>
   );
 };
